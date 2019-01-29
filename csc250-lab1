@@ -1,0 +1,47 @@
+/*
+* help setup for a library of letters and number for class
+* Author fryland001 1/29/2019 V1
+*/
+
+#include <stdio.h>
+#include "gfx2.h"
+#include "lab-p1-letterLib.h"
+
+int main(void)
+{
+    // the size of the screen using gfx2.h
+    int ysize = 300;
+    int xsize = 300;
+    // used to inistiate the cancel later in the code
+    char c;
+    
+    //opens the graphics screen to the specified size 
+    gfx_open(xsize,ysize, "csc250-lab1");
+    
+    //make the shape bright green
+    gfx_color(0,200,0);
+    // in my lab-p1-letterLib.h I created a 7
+    drawChar7(20,20,99)
+    
+    //make the shape "7" a cool looking purple
+    gfx_color(127,15,156);
+    drawChar7(125,125,66);
+    
+    //make the shape "7" white
+    gfx_color(255,255,255);
+    drawChar7(200,200,33);
+
+    //make the shape "7" a dark blue
+    gfx_color(0,55,157);
+    drawChar7(200,100,55);
+    
+    //this while loop will keep the graphic screen active untill promted with a command 
+    while(1)
+    {
+      //this is referenced above to activeate the gfx_wait
+      c=gfx_wait();
+      //the is stament is saying the program will quite and close if q is pressed.
+      if(c=='q')break;
+    }
+
+}
