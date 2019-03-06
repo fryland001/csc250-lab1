@@ -12,7 +12,7 @@
  * Character 7 will be created in programs chosen when using this header
  *
  */
- void drawChar7(double ulCornerX, double ulCornerY, float height)
+ void drawChar7(double ulCornerX, double ulCornerY, double height)
  {
       double ulY = ulCornerY;
       double ulX = ulCornerX;
